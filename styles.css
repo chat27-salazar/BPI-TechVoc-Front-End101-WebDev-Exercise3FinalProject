@@ -193,6 +193,62 @@ button:hover {
     text-align: center;
 }
 
+.feature-title {
+    margin-left: 135px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 20px;
+    color: var(--text-dark);
+    font-size: 1.5em;
+}
+
+.feature-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feature-sec h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.ftr-card {
+    background-color: transparent;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.ftr-card img {
+    width: 100%;
+    height: auto;
+}
+
+.ftr-card content {
+    padding: 20px;
+}
+
+.ftr-content h2 {
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--text-dark); 
+}
+
+.ftr-content p {
+    font-size: 1.15em;
+    color: var(--text-dark); 
+}
+
 .about h1{
     color: var(--text-dark);
     margin-top: 50px;
