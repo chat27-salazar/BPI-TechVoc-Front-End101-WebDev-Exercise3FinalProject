@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoffeeBhie Online Shop">
+    <meta name="keywords" content="Online Coffee Shop, HTML, CSS">
+    <meta name="author" content="Charisse Jen Salazar">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>CoffeeBhie | Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="assets/CoffeeBhie-LogoSite.png" alt="Logo" class="logo"></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+            <li><button onclick="openForm()">Contact Us</button></li>
+        </ul>
+    </nav>
+
+    <div id="contact" style="display: none">
+        <form id="contact-form">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Email" required><br><br>
+            <label for="number">Contact Number:</label>
+            <input type="text" id="number" placeholder="Contact number" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" placeholder="Write here" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+            <button type="close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm(){
+            document.getElementById("contact").style.display = "block";
+        }
+
+        function closeForm(){
+            document.getElementById("contact").style.display = "none";
+        }
+    </script>
+
+    <div class="menu-title">
+        <h1>Menu</h1>
+    </div>
+
+    <div class="menu">
+        <div class="card">
+            <img src="assets/cb-coffee-beans.png" alt="Coffee Beans Pouch">
+            <div class="card-content">
+                <h2>Coffee Beans (CoffeeBhie Blend)</h2>
+                <p>Bring home the finest coffee beans from our shop and enjoy a perfect brew every time.</p>
+                <a href="coffeeBeans-item.html">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/cb-coffee-grounds.png" alt="Coffee Grounds Pouch">
+            <div class="card-content">
+                <h2>Coffee Grounds (CoffeeBhie Blend)</h2>
+                <p>Take home our ground coffee to brew the perfect cup anytime and enjoy café-quality flavor.</p>
+                <a href="coffeeGrounds-item.html">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/cb-caramel-syrup.png" alt="Caramel Syrup Bottle">
+            <div class="card-content">
+                <h2>Caramel Syrup (CoffeeBhie Blend)</h2>
+                <p>Indulge in our irresistible caramel syrup to enhance and top off your favorite drink.</p>
+                <a href="caramelSyrup.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-leftside">
+            <img src="assets/CoffeeBhie-LogoSite.png" alt="Logo" class="footer-logo" width="463px">
+            <p class="newsletter">Join our newsletter to receive updates on new features and releases.</p>
+            <div class="subscribe-form">
+                <form action="/test">
+                    <input type="text" id="email" placeholder="Enter your email" class="email-input" required>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <a id="fb-link" href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+            <a id="ig-link" href="https://www.instagram.com/" target="_blank">Instagram</a><br>
+            <a id="tk-link" href="https://www.tiktok.com/" target="_blank">Tiktok</a><br>
+            <a id="yt-link" href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+            <a id="x-link" href="https://www.x.com/" target="_blank">Twitter</a><br>
+        </div>
+
+        <div class="footer-caption">
+            <p>Caption generated from Relume and ChatGPT| Photos from Pixabay and Canva | Icons from Canva</p>
+        </div>
+    </footer>
+</body>
+</html>

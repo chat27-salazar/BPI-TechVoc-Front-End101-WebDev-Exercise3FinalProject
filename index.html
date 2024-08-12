@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoffeeBhie Online Shop">
+    <meta name="keywords" content="Online Coffee Shop, HTML, CSS">
+    <meta name="author" content="Charisse Jen Salazar">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>CoffeeBhie | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active"><img src="assets/CoffeeBhie-LogoSite.png" alt="Logo" class="logo"></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+            <li><button onclick="openForm()">Contact Us</button></li>
+        </ul>
+    </nav>
+
+    <div id="contact" style="display: none">
+        <form id="contact-form">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Email" required><br><br>
+            <label for="number">Contact Number:</label>
+            <input type="text" id="number" placeholder="Contact number" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" placeholder="Write here" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+            <button type="close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm(){
+            document.getElementById("contact").style.display = "block";
+        }
+
+        function closeForm(){
+            document.getElementById("contact").style.display = "none";
+        }
+    </script>
+
+    <div class="hero-sec">
+        <h1>Discover the Perfect Cup of Coffee</h1>
+        <p>Welcome to our online coffee shop, where you can enjoy the finest brews delivered right to your door.</p>
+        <div class="btns">
+            <div class="explore">
+                <a href="#scroll">Explore</a>
+            </div>
+            <div class="learn">
+                <a href="menu.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="scroll">Savor the Rich Aroma of Freshly Roasted Coffee Beans</h1>
+    <img src="assets/Feature-Beans.png" alt="Coffee Beans Photo">
+
+    <h2>Explore our Wide Selection of 
+        Specialty Coffee Blends</h2>
+    <p>We source our beans from the top coffee-growing regions globally.</p>
+
+    <img src="assets/Feature-CoffeeMake.png" alt="Coffee Making Photo">
+    <h2>Easy to Make Coffee at Home
+        for your Productive Day</h2>
+    <p>Effortlessly brew and make your coffee at home to fuel your most productive day.</p>
+
+    <h1>Experience the Perfect 
+        Cup of Coffee</h1>
+    <p>At our coffee shop, we’re committed to using the finest ingredients for a perfect cup of coffee, and our beginner-friendly, easy-to-make recipes ensure that you can enjoy café-quality drinks right at home. Our expert baristas have crafted each blend with precision, so you can relax and savor every sip in your own cozy space.</p>
+
+    <img src="assets/coffee beans.png" alt="Coffee Beans Icon" width="87px">
+    <h3>Quality Ingredients</h3>
+    <p>We carefully selected finest coffee beans from around the globe to ensure a fantastic flavor in every cup.</p>
+
+    <img src="assets/coffee machine.png" alt="Coffee Machine Icon" width="87px">
+    <h3>Expert Baristas</h3>
+    <p>Our skilled baristas use expertly ground coffee to create the perfect coffee experience just for you.</p>
+
+    <h1>Discover Our Fantastic Products</h1>
+
+    <h3>Coffee Beans</h3>
+    <p>Bring home the finest coffee beans from our shop and enjoy a perfect brew every time.</p>
+
+    <h3>Ground Coffee</h3>
+    <p>Take home our ground coffee to brew the perfect cup anytime and enjoy café-quality flavor.</p>
+
+    <h3>Caramel Syrup</h3>
+    <p>Indulge in our irresistible caramel syrup to enhance and top off your favorite drink.</p>
+
+    <footer>
+        <div class="footer-leftside">
+            <img src="assets/CoffeeBhie-LogoSite.png" alt="Logo" class="footer-logo" width="463px">
+            <p class="newsletter">Join our newsletter to receive updates on new features and releases.</p>
+            <div class="subscribe-form">
+                <form action="/test">
+                    <input type="text" id="email" placeholder="Enter your email" class="email-input" required>
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <a id="fb-link" href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+            <a id="ig-link" href="https://www.instagram.com/" target="_blank">Instagram</a><br>
+            <a id="tk-link" href="https://www.tiktok.com/" target="_blank">Tiktok</a><br>
+            <a id="yt-link" href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+            <a id="x-link" href="https://www.x.com/" target="_blank">Twitter</a><br>
+        </div>
+
+        <div class="footer-caption">
+            <p>Caption generated from Relume and ChatGPT| Photos from Pixabay | Icons from Canva</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
